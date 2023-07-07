@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.separator {
+    position: relative;
+    height: 1px;
+    background-color: transparent;
+    box-shadow: 0 0 60px 30px rgba(29, 78, 216, 0);
+    transition: box-shadow 2s ease-in-out;
+}
+
+.separator.glow {
+    box-shadow: 0 0 500px 200px rgba(29, 78, 216, 0.2);
+}
+
+.gallery-thumbs {
+    width: 100%;
+    height: 80px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: flex-start; /* Align thumbnails to the start */
+    align-items: center;
+    margin-top: 10px;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.gallery-thumbs .swiper-slide {
+    flex: 0 0 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the spacing between thumbnails */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Set a background color for the thumbnails */
+}
+
+.gallery-thumbs img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    height: 100%; /* Add this line to fill the thumbnail container */
+    width: auto; /* Add this line to maintain the aspect ratio */
+}
