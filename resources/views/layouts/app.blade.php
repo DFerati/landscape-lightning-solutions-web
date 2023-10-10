@@ -26,7 +26,7 @@
                 <div class="flex items-center justify-center w-10 h-10 rounded-lg">
                     <img src="{{asset('images/logo-no-text.png')}}" alt="">
                 </div>
-                <span>Landscape Lightning Solutions LLC</span>
+                <span>Dedicated website</span>
             </a>
             <ul class="items-center hidden gap-8 text-sm font-medium lg:flex">
                 <li>
@@ -133,7 +133,7 @@
                 <img src="{{asset('images/logo.png')}}" alt="">
             </div>
         </a>
-        <p class="mt-16 text-sm text-gray-400">© 2023 Landscape Lightning Solutions
+        <p class="mt-16 text-sm text-gray-400">© 2023 Dedicated Website
             <span class="px-2">·</span>
             <a href="#">email@email.com</a></p>
     </div>

@@ -81,7 +81,7 @@
                             class="flex items-center justify-center p-2 bg-primary-500 bg-opacity-10 border border-primary-500/30 rounded-lg">
                             <x:icons.mail class="w-8 h-8 shrink-0 text-primary-500"/>
                         </div>
-                        <h2 class="text-xl font-bold grow">Let's talk about your lighting project!</h2>
+                        <h2 class="text-xl font-bold grow">Let's talk !</h2>
                     </header>
                     <br>
                     @if($contactReceived)
@@ -130,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="mb-4">
-                                <label class="block text-white" for="type">Type of Lighting:</label>
+                                <label class="block text-white" for="type">Type:</label>
                                 <select wire:model.defer="form.type"
                                         class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500"
                                         id="type" name="type" required>
@@ -141,7 +141,7 @@
                             </div>
                             <div class="mb-4">
                                 <label class="block text-white" for="description">Brief description of your
-                                    project:</label>
+                                    message:</label>
                                 <textarea wire:model.defer="form.description"
                                           class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-primary-500"
                                           id="description" name="description" rows="4" required></textarea>

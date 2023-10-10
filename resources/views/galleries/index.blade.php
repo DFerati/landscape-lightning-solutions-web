@@ -16,7 +16,7 @@
         <div class="max-w-screen-2xl mx-auto container relative">
             <header>
                 <h1 class="mt-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
-                    Discover Our Illuminated Creations.
+                    Discover Our Creations.
                 </h1>
             </header>
         </div>
@@ -26,7 +26,7 @@
         <div>
             <div class="max-w-screen-2xl mx-auto container px-4">
                 <div class="mb-4">
-                    <p class="font-medium text-primary-400">Our Stunning Outdoor Lighting Projects</p>
+                    <p class="font-medium text-primary-400">Our purpose and qualities at work</p>
                 </div>
             </div>
             <section class="relative max-w-screen-2xl mx-auto container">
