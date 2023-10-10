@@ -1,44 +1,43 @@
 <div>
-    <div class="z-50 fixed bottom-0 right-5 text-white">
-        <div class="flex items-center space-x-3 w-full bg-gray-700/50 p-3 rounded-md animate-bounce">
-            <div
-                class="flex items-center justify-center p-2 bg-primary-500 bg-opacity-10 border border-primary-500/30 rounded-lg">
-                <x:icons.information class="w-8 h-8 shrink-0 text-primary-500"/>
-            </div>
-            <a href="{{ route('contact') }}"
-               class="flex items-center group hover:bg-primary-700/10 p-2 transition-all duration-300 rounded-lg">
-                <span class="text-sm text-gray-100 font-semibold">
-                    Schedule your Consultation
-                </span>
-                <span
-                    class="group-hover:translate-x-3 ml-3 transition-all duration-300">
-                    <x:icons.arrow-right class="h-6 w-6"/>
-                </span>
-            </a>
-        </div>
-    </div>
-    <section class="relative py-16 -mt-20 overflow-hidden text-white bg-gray-800 px-4">
-        <div class="h-20"></div>
-        <div
-            class="absolute animate-[spin_8s_linear_infinite] right-0 w-1/3 border-b rounded-full -top-1/2 aspect-square border-primary-600/30">
-        </div>
-        <div
-            class="absolute animate-[spin_6s_linear_infinite] right-0 w-1/2 border-b rounded-full -top-1/2 aspect-square border-primary-600/30">
-        </div>
-        <div
-            class="absolute animate-[spin_4s_linear_infinite] right-0 w-2/3 border-b rounded-full -top-1/2 aspect-square border-primary-600/30">
-        </div>
-        <div
-            class="absolute animate-[spin_2s_linear_infinite] right-0 w-full border-b rounded-full -top-1/2 aspect-square border-primary-600/30">
-        </div>
-        <div class="max-w-screen-2xl mx-auto container relative">
-            <header>
-                <h1 class="mt-8 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-[20ch]">
-                    Welcome
-                </h1>
-            </header>
-        </div>
-    </section>
+{{--    <div class="z-50 fixed bottom-0 right-5 text-white">--}}
+{{--        <div class="flex items-center space-x-3 w-full bg-gray-700/50 p-3 rounded-md animate-bounce">--}}
+{{--            <div--}}
+{{--                class="flex items-center justify-center p-2 bg-primary-500 bg-opacity-10 border border-primary-500/30 rounded-lg">--}}
+{{--                <x:icons.information class="w-8 h-8 shrink-0 text-primary-500"/>--}}
+{{--            </div>--}}
+{{--            <a href="{{ route('contact') }}"--}}
+{{--               class="flex items-center group hover:bg-primary-700/10 p-2 transition-all duration-300 rounded-lg">--}}
+{{--                <span class="text-sm text-gray-100 font-semibold">--}}
+{{--                    Schedule your Consultation--}}
+{{--                </span>--}}
+{{--                <span--}}
+{{--                    class="group-hover:translate-x-3 ml-3 transition-all duration-300">--}}
+{{--                    <x:icons.arrow-right class="h-6 w-6"/>--}}
+{{--                </span>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <section class="relative py-16 overflow-hidden text-white bg-gray-800 px-4 h-screen">--}}
+{{--        <div--}}
+{{--            class="absolute animate-[spin_8s_linear_infinite] right-0 w-1/3 border-b rounded-full -top-1/2 aspect-square border-primary-600/30">--}}
+{{--        </div>--}}
+{{--        <div--}}
+{{--            class="absolute animate-[spin_6s_linear_infinite] right-0 w-1/2 border-b rounded-full -top-1/2 aspect-square border-primary-600/30">--}}
+{{--        </div>--}}
+{{--        <div--}}
+{{--            class="absolute animate-[spin_4s_linear_infinite] right-0 w-2/3 border-b rounded-full -top-1/2 aspect-square border-primary-600/30">--}}
+{{--        </div>--}}
+{{--        <div--}}
+{{--            class="absolute animate-[spin_2s_linear_infinite] right-0 w-full border-b rounded-full -top-1/2 aspect-square border-primary-600/30">--}}
+{{--        </div>--}}
+{{--        <div class="absolute w-full h-full">--}}
+{{--            <header class="h-full w-full">--}}
+{{--                <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter w-full h-full m-auto flex justify-center items-center">--}}
+{{--                    Welcome--}}
+{{--                </h1>--}}
+{{--            </header>--}}
+{{--        </div>--}}
+{{--    </section>--}}
     <div class="h-px bg-gradient-to-r from-gray-800 via-primary-400 to-gray-800"></div>
     <main class="py-16 text-white bg-gradient-to-br from-gray-800 to-gray-900 grow">
         <div class="flex flex-col space-y-10 overflow-hidden">
@@ -201,48 +200,35 @@
                         class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                         <div class="grid grid-cols-2 gap-4 mt-8">
                             <img class="w-full rounded-lg"
-                                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+                                 src="{{ asset('images/park-design-1.jpg') }}"
                                  alt="office content 1">
                             <img class="mt-4 w-full lg:mt-10 rounded-lg"
-                                 src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+                                 src="{{ asset('images/park-design-2.jpg') }}"
                                  alt="office content 2">
                         </div>
                         <div class="font-light sm:text-lg text-gray-400">
                             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
-                                What we Offer
+                                Introduction
                             </h2>
                             <p class="mb-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores beatae
-                                consectetur dignissimos doloremque dolores eaque earum enim error et expedita, fuga
-                                illum ipsa, labore maiores minus officia officiis possimus, provident quas quo rem
-                                reprehenderit repudiandae saepe tempora velit voluptas voluptatem. Animi cupiditate
-                                deleniti maiores pariatur reiciendis repellendus soluta voluptatibus?
+                                Kosovo, nestled in the heart of the Balkans, boasts a remarkable array of parks, each
+                                offering a unique slice of natural beauty and tranquility. In our quest to celebrate
+                                these lush havens, we present the "Map of Parks in Kosovo." This comprehensive guide
+                                will take you on a journey through some of the most enchanting parks in the country,
+                                highlighting their significance, beauty, and accessibility.
                             </p>
                             <br>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi facere fugiat iure
-                                laudantium neque! Aliquam aliquid blanditiis, cumque error et eum ipsam labore magnam
-                                officia omnis optio quod quos repellendus suscipit tenetur ut voluptatem? Culpa id
-                                incidunt minima modi quos!
-                            </p>
-                            <br>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur
-                                consequatur, ea eius fuga inventore numquam? Aperiam culpa debitis dignissimos dolorum,
-                                ducimus expedita explicabo fugiat in ipsam libero modi natus non odit placeat possimus
-                                quas quia, reprehenderit tempore, totam voluptatem.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="fadeIn-element-3"
                  class="max-w-screen-2xl mx-auto container relative transition-all duration-1000 transform opacity-0 px-4">
-                <section class="py-16 lg:py-24 ">
+                <section class="py-8 px-4 lg:px-6 lg:py-16">
                     <div id="testimonials" class="custom-screen text-gray-300">
                         <div class="max-w-2xl text-center md:mx-auto"><h2
                                 class="text-gray-50 text-3xl font-semibold sm:text-4xl">
-                                Our experience with our beloved clients
+                                Discovering Kosovo's Parkland Paradise
                             </h2>
                         </div>
                         <div class="relative mt-12">
@@ -253,215 +239,135 @@
                                     <li class="p-4 rounded-xl border border-gray-800"
                                         style="background-image:radial-gradient(100% 100% at 50% 50%, rgba(29, 78, 216, 0.05) 0%, rgba(124, 58, 237, 0) 100%)">
                                         <figure class="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-                                                    consectetur fugiat quia! Accusamus culpa exercitationem neque
-                                                    placeat quae, repudiandae sit.
-                                                </p>
-                                            </blockquote>
                                             <div class="flex items-center gap-x-4">
                                                 <div>
-                                                    <span class="block text-gray-50 font-semibold">
-                                                        Sarah M.
-                                                    </span>
-                                                    <span class="block text-sm mt-0.5">
-                                                        Architectural Designer
+                                                    <span class="font-medium text-primary-400">
+                                                        City Escapes.
                                                     </span>
                                                 </div>
                                             </div>
+                                            <blockquote>
+                                                <p>
+                                                    Kosovo's urban centers are graced with inviting parks. Pristina, the
+                                                    capital, is home to Taukbahçe Park, a green oasis offering serene
+                                                    strolls, shaded benches, and a perfect escape from the city's hustle
+                                                    and bustle. The lush Mother Teresa Square is another urban gem,
+                                                    complete with fountains and sculptures.
+                                                </p>
+                                            </blockquote>
                                         </figure>
                                     </li>
                                     <li class="p-4 rounded-xl border border-gray-800"
                                         style="background-image:radial-gradient(100% 100% at 50% 50%, rgba(29, 78, 216, 0.05) 0%, rgba(124, 58, 237, 0) 100%)">
                                         <figure class="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Exercitationem inventore molestiae nisi odit tempore. Tempora!
-                                                </p>
-                                            </blockquote>
                                             <div class="flex items-center gap-x-4">
                                                 <div>
-                                                    <span class="block text-gray-50 font-semibold">
-                                                        Mark R.
-                                                    </span>
-                                                    <span class="block text-sm mt-0.5">
-                                                        Event Planer
+                                                    <span class="font-medium text-primary-400">
+                                                        Historical Parks.
                                                     </span>
                                                 </div>
                                             </div>
+                                            <blockquote>
+                                                <p>
+                                                    Kosovo's history comes to life in its parks. The Imperial Mosque
+                                                    Park in Prizren surrounds an ancient mosque and offers a peaceful
+                                                    retreat where visitors can reflect on the region's rich past. The
+                                                    Kalaja e Prizrenit Park offers panoramic views of the city and its
+                                                    historical fortress.
+                                                </p>
+                                            </blockquote>
                                         </figure>
                                     </li>
                                     <li class="p-4 rounded-xl border border-gray-800"
                                         style="background-image:radial-gradient(100% 100% at 50% 50%, rgba(29, 78, 216, 0.05) 0%, rgba(124, 58, 237, 0) 100%)">
                                         <figure class="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                                                    blanditiis consequuntur debitis ducimus libero nemo omnis quis quos
-                                                    veritatis vitae.
-                                                </p>
-                                            </blockquote>
                                             <div class="flex items-center gap-x-4">
                                                 <div>
-                                                    <span class="block text-gray-50 font-semibold">
-                                                        Emily T.
-                                                    </span>
-                                                    <span class="block text-sm mt-0.5">
-                                                        Financial Advisor
+                                                    <span class="font-medium text-primary-400">
+                                                        Natural Retreats.
                                                     </span>
                                                 </div>
                                             </div>
+                                            <blockquote>
+                                                <p>
+                                                    Nature enthusiasts will find solace in Kosovo's natural parks. The
+                                                    Sharri National Park, with its breathtaking mountain landscapes, is
+                                                    a hiker's paradise. Bjeshkët e Nemuna National Park, known for its
+                                                    pristine wilderness and diverse wildlife, is an untouched gem.
+                                                </p>
+                                            </blockquote>
                                         </figure>
                                     </li>
                                     <li class="p-4 rounded-xl border border-gray-800"
                                         style="background-image:radial-gradient(100% 100% at 50% 50%, rgba(29, 78, 216, 0.05) 0%, rgba(124, 58, 237, 0) 100%)">
                                         <figure class="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                                                    aliquam dicta ea inventore nisi odio quis, similique sint ullam
-                                                    vero.
-                                                </p>
-                                            </blockquote>
                                             <div class="flex items-center gap-x-4">
                                                 <div>
-                                                    <span class="block text-gray-50 font-semibold">
-                                                        Jason W.
-                                                    </span>
-                                                    <span class="block text-sm mt-0.5">
-                                                        Graphic Designer
+                                                    <span class="font-medium text-primary-400">
+                                                        Cultural Parks.
                                                     </span>
                                                 </div>
                                             </div>
+                                            <blockquote>
+                                                <p>
+                                                    In this serene sanctuary, visitors can also learn about the
+                                                    monastery's historical importance through informative plaques and
+                                                    guided tours. As you explore, you'll discover that the Gracanica
+                                                    Monastery Garden is not just a place to visit; it's a destination
+                                                    that fosters a deep sense of wonder, reverence, and connection to
+                                                    both the spiritual and natural world.
+                                                </p>
+                                            </blockquote>
                                         </figure>
                                     </li>
                                     <li class="p-4 rounded-xl border border-gray-800"
                                         style="background-image:radial-gradient(100% 100% at 50% 50%, rgba(29, 78, 216, 0.05) 0%, rgba(124, 58, 237, 0) 100%)">
                                         <figure class="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-                                                    consectetur nemo omnis saepe sapiente vitae!
-                                                </p>
-                                            </blockquote>
                                             <div class="flex items-center gap-x-4">
                                                 <div>
-                                                    <span class="block text-gray-50 font-semibold">
-                                                        Olivia S.
-                                                    </span>
-                                                    <span class="block text-sm mt-0.5">
-                                                        Veterinarian
+                                                    <span class="font-medium text-primary-400">
+                                                        Riverside Retreats.
                                                     </span>
                                                 </div>
                                             </div>
+                                            <blockquote>
+                                                <p>
+                                                    Kosovo's parks are not limited to landlocked areas. Several parks
+                                                    are nestled along picturesque rivers, offering a serene environment
+                                                    for relaxation and recreation. The Lumbardhi Park in Prizren, with
+                                                    its tranquil riverbank setting, is a prime example. Here, you can
+                                                    enjoy a leisurely walk, have a riverside picnic, or simply bask in
+                                                    the soothing sounds of flowing water.
+                                                </p>
+                                            </blockquote>
                                         </figure>
                                     </li>
                                     <li class="p-4 rounded-xl border border-gray-800"
                                         style="background-image:radial-gradient(100% 100% at 50% 50%, rgba(29, 78, 216, 0.05) 0%, rgba(124, 58, 237, 0) 100%)">
                                         <figure class="flex flex-col justify-between gap-y-6 h-full">
-                                            <blockquote>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-                                                    incidunt officia quasi quo sed suscipit, veritatis! Laborum
-                                                    molestiae molestias nobis?
-                                                </p>
-                                            </blockquote>
                                             <div class="flex items-center gap-x-4">
                                                 <div>
-                                                    <span class="block text-gray-50 font-semibold">
-                                                        Michael M.
-                                                    </span>
-                                                    <span class="block text-sm mt-0.5">
-                                                        Software Engineer
+                                                    <span class="font-medium text-primary-400">
+                                                        Family-Friendly Fun.
                                                     </span>
                                                 </div>
                                             </div>
+                                            <blockquote>
+                                                <p>
+                                                    Kosovo's parks are perfect for family outings. Many parks feature
+                                                    playgrounds, open spaces, and facilities for children's activities.
+                                                    The Germia Park in Pristina is a popular family destination,
+                                                    equipped with swimming pools, playgrounds, and picnic areas. It's a
+                                                    place where both young and old can enjoy quality time together in a
+                                                    green, natural setting.
+                                                </p>
+                                            </blockquote>
                                         </figure>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-            <div id="fadeIn-element-4"
-                 class="max-w-screen-2xl mx-auto container relative transition-all duration-1000 transform opacity-0 px-4">
-                <section class="relative py-28 backdrop rounded-lg bg-gray-900">
-                    <div
-                        class="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
-                        <div class="max-w-xl">
-                            <h3 class="text-white text-3xl font-semibold sm:text-4xl">
-                                Don't Hesitate, <br>
-                                Contact us now!
-                            </h3>
-                            <p class="mt-3">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus adipisci
-                                architecto beatae commodi consectetur deleniti deserunt distinctio dolore ea est eum
-                                fugiat id in minima modi molestiae officia pariatur porro quae quaerat quasi,
-                                repellendus rerum similique ullam vitae voluptatum?
-                            </p>
-                        </div>
-                        <div class="mt-12 lg:mt-0">
-                            <ul class="grid gap-8">
-                                <li class="flex gap-x-4">
-                                    <ul class="flex flex-col gap-5">
-                                        <li class="flex items-center space-x-3">
-                                            <div
-                                                class="flex items-center justify-center p-2 bg-primary-500 bg-opacity-10 border border-primary-500/30 rounded-lg">
-                                                <x:icons.information class="w-8 h-8 shrink-0 text-primary-500"/>
-                                            </div>
-                                            <a href="{{ route('galleries') }}"
-                                               class="flex items-center group hover:bg-primary-700/10 p-2 transition-all duration-300 rounded-lg">
-                                                <span class="text-sm text-gray-100 font-semibold">
-                                                    Learn more about our work
-                                                </span>
-                                                <span
-                                                    class="group-hover:translate-x-3 ml-3 transition-all duration-300">
-                                                    <x:icons.arrow-right class="h-6 w-6"/>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center space-x-3">
-                                            <div
-                                                class="flex items-center justify-center p-2 bg-primary-500 bg-opacity-10 border border-primary-500/30 rounded-lg">
-                                                <x:icons.information class="w-8 h-8 shrink-0 text-primary-500"/>
-                                            </div>
-                                            <a href="{{ route('about-us') }}"
-                                               class="flex items-center group hover:bg-primary-700/10 p-2 transition-all duration-300 rounded-lg">
-                                                <span class="text-sm text-gray-100 font-semibold">
-                                                    Learn more about us
-                                                </span>
-                                                <span
-                                                    class="group-hover:translate-x-3 ml-3 transition-all duration-300">
-                                                    <x:icons.arrow-right class="h-6 w-6"/>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="flex items-center space-x-3 w-64">
-                                            <div
-                                                class="flex items-center justify-center p-2 bg-primary-500 bg-opacity-10 border border-primary-500/30 rounded-lg">
-                                                <x:icons.phone-incoming class="w-8 h-8 shrink-0 text-primary-500"/>
-                                            </div>
-                                            <a href="{{ route('contact') }}"
-                                               class="flex items-center group hover:bg-primary-700/10 p-2 transition-all duration-300 rounded-lg">
-                                                <span class="text-sm text-gray-100 font-semibold">
-                                                    Contact us
-                                                </span>
-                                                <span
-                                                    class="group-hover:translate-x-3 ml-3 transition-all duration-300">
-                                                    <x:icons.arrow-right class="h-6 w-6"/>
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]"
-                         style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(29, 78, 216, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
                 </section>
             </div>
         </div>

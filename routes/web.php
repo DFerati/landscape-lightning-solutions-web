@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomePage::class)->name('home');
 Route::get('/galleries', GalleriesPage::class)->name('galleries');
 Route::get('/about-us', AboutUsPage::class)->name('about-us');
-Route::get('/services', ServicesPage::class)->name('services');
-Route::get('/FAQs', FAQsPage::class)->name('faqs');
-Route::get('/contact-us', ContactPage::class)->name('contact');
+//Route::get('/services', ServicesPage::class)->name('services');
+//Route::get('/FAQs', FAQsPage::class)->name('faqs');
+//Route::get('/contact-us', ContactPage::class)->name('contact');
 
